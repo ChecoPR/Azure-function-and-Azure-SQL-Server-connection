@@ -2,7 +2,8 @@ import logging
 import azure.functions as func
 from azure.functions.decorators.core import DataType
 import uuid
-
+# Follow this microsoft learn doc to add azure SQL Server credentials 
+# https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-azure-sql-vs-code?pivots=programming-language-python
 app = func.FunctionApp()
 
 @app.function_name(name="HttpTrigger")
